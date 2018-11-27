@@ -2,11 +2,11 @@
 
 To run the environment, first of all you have to build the HDFS image locally with the following command from the docker-spark-mongoDB-ES folder:
 
-´´´./build_images.sh start´´´
+```./build_images.sh start```
 
 once the process is finished:
 
-´´´docker-compose up -d´´´
+```docker-compose up -d```
 
 and the environment should be up without any errors
 

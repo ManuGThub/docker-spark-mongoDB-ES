@@ -19,3 +19,23 @@ HDFS ---> ElasticSearch<br />
 ElasticSearch ---> MongoDB<br />
 
 and compare the result DataFrame with the original one, displaying the result
+
+OR
+
+just compile and build the proyect 
+
+once the proyect is built, copy the .jar into the spark master container
+
+```docker cp [path_yo_jar]/proyectoInserciones.jar insert_spark-master:/proyectoInserciones.jar```
+
+then run the following command to get into the Spark master docker container
+
+```docker exec -it master /bin/bash```
+
+and run the following command to submit the job
+
+```spark-submit \
+  --class Main \
+  --master spark://master:7077 \
+  /proyectoInserciones.jar [parameters]
+```

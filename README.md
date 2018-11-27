@@ -14,8 +14,8 @@ then you could open the Scala Proyect called: proyectoInserciones and run it fro
 
 It will do the following data flow:
 
-local ---> HDFS
-HDFS ---> ElasticSearch
-ElasticSearch ---> MongoDB
+local ---> HDFS<br />
+HDFS ---> ElasticSearch<br />
+ElasticSearch ---> MongoDB<br />
 
 and compare the result DataFrame with the original one, displaying the result

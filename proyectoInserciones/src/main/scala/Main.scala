@@ -15,7 +15,7 @@ object Main {
       getOrCreate()
 
     //read csv
-    val csv=sparkSession.read.format("csv").option("header", "true").load("/home/manuel/data/slice_violations.csv")
+    val csv=sparkSession.read.format("csv").option("header", "true").load(DataPersistUtils.CSV_PATH)
 
     println("CSV FILE READ SUCCESSFULLY")
 

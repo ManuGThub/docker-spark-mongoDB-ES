@@ -4,6 +4,8 @@ import org.apache.spark.sql.types.{BooleanType, StringType, StructField, StructT
 
 object DataPersistUtils {
 
+  val CSV_PATH ="../data/slice_violations.csv"
+
   case class TrafficViolation(
     personal_injury: Boolean,
     make: String,

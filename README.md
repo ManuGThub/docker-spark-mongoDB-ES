@@ -30,7 +30,7 @@ once the proyect is built, copy the .jar into the spark master container
 
 then run the following command to get into the Spark master docker container
 
-```docker exec -it master /bin/bash```
+```docker exec -it insert_spark-master /bin/bash```
 
 and run the following command to submit the job
 

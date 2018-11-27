@@ -30,7 +30,7 @@ once the proyect is built, copy the .jar into the spark master container
 
 copy the configuration properties to the spark master container
 
-```docker cp proyectoInserciones/src/main/resources/log4j.properties tmp/data/log4j.properties```
+```docker cp proyectoInserciones/src/main/resources/log4j.properties insert_spark-master:/tmp/data/log4j.properties```
 
 then run the following command to get into the Spark master docker container
 
